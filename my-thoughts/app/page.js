@@ -1,9 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { Heading } from "@chakra-ui/react";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
+    <div>
+      <Heading>Hello</Heading>
       <main className={styles.main}>
         <Image
           className={styles.logo}
