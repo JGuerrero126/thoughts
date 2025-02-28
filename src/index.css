@@ -1,0 +1,43 @@
+.page-cover {
+  background-color: #e3d0b5;
+  color: #785e3a;
+  border: 1px solid #998466;
+}
+
+.page-cover h2 {
+  text-align: center;
+  padding-top: 50%;
+  font-size: 210%;
+}
+
+.page {
+  box-shadow: inset 0 0 30px 0 rgba(36, 10, 3, 0.5),
+    -2px 0 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.page-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.page-header {
+  height: 30px;
+  font-size: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.page-text {
+  height: 100%;
+  flex-grow: 1;
+  font-size: 80%;
+  text-align: justify;
+  margin-top: 10px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  border-top: 1px solid #f4e8d7;
+}
