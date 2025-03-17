@@ -37,31 +37,33 @@ const Page = React.forwardRef((props, ref) => {
 function Home() {
   return (
     <div>
-      <HTMLFlipBook
-        width={550}
-        height={733}
-        size="stretch"
-        minWidth={315}
-        maxWidth={1000}
-        minHeight={400}
-        maxHeight={1533}
-        maxShadowOpacity={0.5}
-        showCover={true}
-        mobileScrollSupport={true}
-        // onFlip={this.onPage}
-        // onChangeOrientation={this.onChangeOrientation}
-        // onChangeState={this.onChangeState}
-        // className="demo-book"
-        // ref={(el) => (this.flipBook = el)}
-      >
-        <PageCover>My Thoughts</PageCover>
-        <Page header="Initial Thoughts" number={1}>
-          Where to begin?
-        </Page>
-        <div className="demoPage">Page 2</div>
-        <div className="demoPage">Page 3</div>
-        <div className="demoPage">Page 4</div>
-      </HTMLFlipBook>
+      <Container padding="2rem" width="100">
+        <HTMLFlipBook
+          width={550}
+          height={733}
+          size="stretch"
+          minWidth={315}
+          maxWidth={1000}
+          minHeight={400}
+          maxHeight={1533}
+          maxShadowOpacity={0.5}
+          showCover={true}
+          mobileScrollSupport={true}
+          // onFlip={this.onPage}
+          // onChangeOrientation={this.onChangeOrientation}
+          // onChangeState={this.onChangeState}
+          // className="demo-book"
+          // ref={(el) => (this.flipBook = el)}
+        >
+          <PageCover>My Thoughts</PageCover>
+          <Page header="Initial Thoughts" number={1}>
+            Where to begin?
+          </Page>
+          <div className="demoPage">Page 2</div>
+          <div className="demoPage">Page 3</div>
+          <div className="demoPage">Page 4</div>
+        </HTMLFlipBook>
+      </Container>
     </div>
   );
 }
